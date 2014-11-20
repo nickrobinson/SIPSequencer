@@ -22,7 +22,7 @@ BEGIN {
 		split($7, dst, "=");
 		printf "\t%s=>%s [ label = \"",  uArr[src[2]], uArr[dst[2]];
 		getline;
-		$1=$2=$3="";
+		$2=$3="";
 		printf "%s\" ] ;\n", $0;
 	}
     }
